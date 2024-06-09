@@ -6,15 +6,20 @@
     "scripts": {
         "dev": "tsnd --respawn --clear src/app.ts",
         "build": "rimraf ./dist && tsc",
-        "start": "npm run build && node dist/app.ks"
+        "start": "npm run build && node dist/app.ks",
+        "netlify:dev": "netlify dev"
     },
     "keywords": [],
     "author": "",
     "license": "ISC",
     "devDependencies": {
         "@types/node": "^20.14.2",
+        "netlify-cli": "^17.26.1",
         "rimraf": "^5.0.7",
         "ts-node-dev": "^2.0.0",
         "typescript": "^5.4.5"
+    },
+    "dependencies": {
+        "@netlify/functions": "^2.7.0"
     }
 }
